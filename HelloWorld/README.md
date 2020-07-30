@@ -2,7 +2,7 @@
 
 WIP
 
-Hello World! As the name might suggest this is my first time... doing several things. While this is hardware and not software, it's still my first time:
+Hello World! This is a three-channel eurorack mixer, but more importantly, as the name might suggest, this is my first time doing several things. It's my first time
  - Using KiCad
  - Making a eurorack module
  - Making something usable enough to give to someone (or maybe even sell)
@@ -13,9 +13,7 @@ If you're just here to make the module, go ahead and skip to [Can I make this?](
  
  ## How did I  do it?
 
-I wanted to start out simple, so I chose a schematic i *completely* understood: a simple mixer with a volume control. 
-
-My goal over time is to simultaneously design more sophisticated PCBs, and learn about more advanced circuits as I go.
+I wanted to start out simple, so I chose a schematic i *completely* understood: a simple mixer with a volume control. The challenge with this project wasn't circuit design, but rather learning KiCad and designing to the specifications of Eurorack. My goal over time is to simultaneously design more sophisticated PCBs, and learn about more advanced circuits as I go.
 
 ## What did I learn?
 
@@ -28,5 +26,6 @@ Yeah, go ahead. Send the gerber zip files to JLCPCB or someone else, and read th
 ## Resources: 
  - [KiCad](https://kicad-pcb.org/)
  - [Getting Started in KiCad](https://docs.kicad-pcb.org/5.1/en/getting_started_in_kicad/getting_started_in_kicad.html)
-
+ - [Doepfer A100 electrical specification](http://www.doepfer.de/a100_man/a100t_e.htm)
+ - [Doepfer A100 mechanical specification](http://www.doepfer.de/a100_man/a100m_e.htm)
  - [DigiKey footprint library](https://www.digikey.com/en/resources/design-tools/kicad)
