@@ -9,7 +9,7 @@ Hello World! As the name might suggest this is my first time... doing several th
  
 I learned a lot in the process of making this, and I wanted to document those experiences - for myself as well as others that could be interested in learning the same. 
 
-If you're just here to make the module, go ahead and skip to "Can I make this?".
+If you're just here to make the module, go ahead and skip to [Can I make this?](https://github.com/FlipTheEgg/eurorack/tree/master/HelloWorld#can-i-make-this).
  
  ## How did I  do it?
 
