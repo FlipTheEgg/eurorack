@@ -30,11 +30,32 @@ While laying out the PCB, i quickly noticed that the standard grid wasn't in mil
 
 ### Measure twice: Building the PCB before the panel is bad.
 ### Footprints: decide what components to use *before* you layout.
-### File structure and you: This repository is a mess.
+This one I only thought about when shopping for components! I chose the footprints before I decided the exact components. This meant that when it came to decide what those were, I had accidentally limited my choice. In this case, it meant that I couldn't use box-type capacitors, because they have a much larger pin spaceing than I had selected. It also meant that I couldn't use a shrouded header for the power connector as originally planned, because I placed it too close to the edge without concern for its actual size. This time this wasn't a problem, but I can easily imagine making an error like that resulting in having to redo the entire layout. Speaking of condensers just wanna plug [this great blogpost](http://tagboardeffects.blogspot.com/p/components.html) by Tagboardeffects about components. I've used it to understand especially what the differences are between condensers.
+
+### File structure and you: This repository is a mess...
+...but it doesn't have to be this way! 
+A lot of the confusion in the repository comes from how I exported the gerbers. I made seperate folders for the gerber files (smart), but put the zips outside of those folders (dumb). Next time I'll do it like this:
+
+> ProjectName
+>> other stuff
+>>
+>> gerbers
+>>> FolderWithMainboard
+>>>
+>>> FolderWithPanel
+>>>
+>>> Mainboard.zip
+>>>
+>>> Panel.zip
+
+I also have some redundancy on top of that, because I have a PCB file for the panel and the mainboard seperately, **AND** a file for both of them, du to how I split them originally. Next time I'll make a seperate PBC file for the panel from the get-go.
+
 ### Panel design.
 
+Something about PCB art
+
 ## Can I make this?
-Yeah, go ahead. Send the gerber zip files to JLCPCB or someone else, and read the BOM to find out what parts you need, and order them somewhere. But **Don't** send them the zip with the panel *and* the main PCB, that'll go wrong.
+Yeah, go ahead! I wrote CC-BY-SA on the board, so I'm sticking with that. I don't know if this is the best license choice for this, if you know a bunch about it do reach out, I'd appreciate it. Send the gerber zip files to JLCPCB or someone else, and read the BOM to find out what parts you need, and order them somewhere. But **Don't** send them the zip with the panel *and* the main PCB, that'll go wrong. If you somehow do, please send me an image of the board you recieve.
 
 ## Resources: 
  - [KiCad](https://kicad-pcb.org/)
@@ -47,4 +68,5 @@ Yeah, go ahead. Send the gerber zip files to JLCPCB or someone else, and read th
  - [Thonk](https://thonk.co.uk/) for more parts
  - [JLCPCB](https://jlcpcb.com/) for PCB manufacture
  - [How to export KiCad PCB to Gerber files](https://support.jlcpcb.com/article/44-how-to-export-kicad-pcb-to-gerber-files)
+ - [Tagboardeffects - "Components"](http://tagboardeffects.blogspot.com/p/components.html)
  - [DigiKey footprint library](https://www.digikey.com/en/resources/design-tools/kicad)
