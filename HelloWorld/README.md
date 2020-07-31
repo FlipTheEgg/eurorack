@@ -13,7 +13,7 @@ If you're just here to make the module, go ahead and skip to [Can I make this?](
  
  ## How did I  do it?
 
-I wanted to start out simple, so I chose a schematic i *completely* understood: a simple mixer with a volume control. AI Synthesis has a wonderful selection of well-documented DIY builds, including schematics and build guides, and I chose to copy the AI002. The challenge with this project wasn't circuit design, but rather learning KiCad and designing to the specifications of Eurorack. My goal over time is to simultaneously design more sophisticated PCBs, and learn about more advanced circuits as I go.
+I wanted to start out simple, so I chose a schematic i *completely* understood: a simple mixer with a volume control. AI Synthesis has a wonderful selection of well-documented DIY builds, including schematics and build guides, and I chose to copy the AI002 because the challenge with this project wasn't circuit design, but learning KiCad and designing to the specifications of Eurorack. My goal over time is to simultaneously design more sophisticated PCBs, and learn about more advanced circuits as I go.
 
 With this specific project in mind I followed the guide [Getting Started in KiCad](https://docs.kicad-pcb.org/5.1/en/getting_started_in_kicad/getting_started_in_kicad.html), and substituted the example project with the AI002. I've previously experimented with [Fritzing](https://fritzing.org/), but I found it a little inaccurate and inflexible. Following the guide mostly went well and without issue. Not all the components I wanted to use had footprints in the standard Kicad library, but I managed to select some different components, or make my own footprints, which the guide also covers. I found KiCad to be slightly bulky to use at first, especially the disconnect between schematic symbol and footprint seemed cumbersome until I understood the flexibility this gives. I also had some confusion about how KiCad connects legs of the schematic components to the pins of the footprint (I can easily choose a 16-pin footprint to a 4-pin schematic component, for example), but  I realized that's where knowing how to edit footprints is really important and powerful. This also encouraged me to check the datasheets for my components whenever I was in doubt, which is good! The guide actually did answer almost all my questions, and upon revising my design, some of these quirks made more sense to me. For example, going back and choosing a different footprint or schematic symbol for a component, which I did a couple of times, was very quick and painless.
 
@@ -43,4 +43,8 @@ Yeah, go ahead. Send the gerber zip files to JLCPCB or someone else, and read th
  - [Befaco](https://www.befaco.org/) also has the schematics available for all their modules. They're all significantly more advanced than this build, but I'll definitely be looking at them in the future!
  - [Doepfer A100 electrical specification](http://www.doepfer.de/a100_man/a100t_e.htm)
  - [Doepfer A100 mechanical specification](http://www.doepfer.de/a100_man/a100m_e.htm)
+ - [Tayda Electronics](https://www.taydaelectronics.com/) for parts
+ - [Thonk](https://thonk.co.uk/) for more parts
+ - [JLCPCB](https://jlcpcb.com/) for PCB manufacture
+ - [How to export KiCad PCB to Gerber files](https://support.jlcpcb.com/article/44-how-to-export-kicad-pcb-to-gerber-files)
  - [DigiKey footprint library](https://www.digikey.com/en/resources/design-tools/kicad)
